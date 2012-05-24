@@ -46,7 +46,7 @@
 #include "motion_plus.h"                /* for motion_plus_disconnected, etc */
 #include "io.h"                         /* for wiiuse_io_read on Windows, etc */
 
-#ifndef WIIUSE_WIN32
+#if !(defined(WIIUSE_WIN32) || defined(WIIUSE_ARDUINO))
 	#include <sys/time.h>                   /* for timeval */
 	#include <sys/select.h>                 /* for select, fd_set */
 	#include <unistd.h>                     /* for read */

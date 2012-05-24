@@ -38,7 +38,7 @@ void wiiuse_millisleep(int durationMilliseconds) {
 	Sleep(durationMilliseconds);
 }
 
-#else /* not win32 - assuming posix */
+#elif !defined(WIIUSE_ARDUINO) /* not win32 - assuming posix */
 
 #include <unistd.h>                     /* for usleep */
 

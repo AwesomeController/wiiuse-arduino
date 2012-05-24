@@ -50,6 +50,10 @@
 #ifndef WIIUSE_INTERNAL_H_INCLUDED
 #define WIIUSE_INTERNAL_H_INCLUDED
 
+#ifndef __ARDUINO__
+  #define __ARDUINO__
+#endif
+
 #ifndef WIIUSE_PLATFORM
 	#if defined(_WIN32)
 		#define WIIUSE_PLATFORM
@@ -60,6 +64,9 @@
 	#elif defined(__APPLE__)
 		#define WIIUSE_PLATFORM
 		#define WIIUSE_MAC
+ 	#elif defined(__ARDUINO__)
+ 		#define WIIUSE_PLATFORM
+		#define WIIUSE_ARDUINO
 	#else
 		#error "Platform not yet supported!"
 	#endif
