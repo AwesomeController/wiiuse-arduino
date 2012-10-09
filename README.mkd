@@ -1,5 +1,13 @@
-WiiUse README
+WiiUse-Arduino README
 =============
+
+We're attempting to port WiiUse to the Arduino platform. WiiUse is the 
+most comprehensive wiimote library that we've found, and if possible
+we will use as much of it as possible for Awesome Controller. Very 
+little progress so far.
+
+rpavlik/WiiUse
+----------
 
 Semi-Official Fork, located at <http://github.com/rpavlik/wiiuse>
 
